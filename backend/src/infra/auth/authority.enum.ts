@@ -1,0 +1,6 @@
+export enum Authority {
+  STUDENT = 'STUDENT',
+  PROFESSOR = 'PROFESSOR',
+  TECH_MANAGER = 'TECH_MANAGER',
+  ADMIN = 'ADMIN',
+}

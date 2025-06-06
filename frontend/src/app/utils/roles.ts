@@ -1,0 +1,22 @@
+export const USER_ROLES = {
+    STUDENT: 'STUDENT',
+    PROFESSOR: 'PROFESSOR',
+    TECH_MANAGER: 'TECH_MANAGER',
+    ADMIN: 'ADMIN',
+};
+
+export const EVENT_ROLES = {
+    ORGANIZER: 'ORGANIZER',
+    PARTICIPANT: 'PARTICIPANT',
+    OWNER: 'OWNER',
+};
+export const ARTICLE_ROLES = {
+    REVIEWER: 'REVIEWER',
+    AUTHOR: 'AUTHOR',
+    COAUTHOR: 'CO_AUTHOR',
+}
+export const REVIEW_STATUS = {
+    PENDING: 'PENDING',
+    CLOSED: 'CLOSED',
+    ON_REVIEW: 'ON_REVIEW',
+}

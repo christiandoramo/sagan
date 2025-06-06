@@ -1,0 +1,46 @@
+@baseUrl = http://localhost:8080
+
+@authToken = {{authenticate.response.body.access_token}}
+
+# @name create_user
+POST {{baseUrl}}/users
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+    "name": "John Doe",
+    "email": "lea@mail.com",
+    "password": "123",
+    "college": "UFRJ"
+}
+
+###
+
+# @name authenticate
+POST {{baseUrl}}/auth
+Content-Type: application/json
+
+{
+    "email": "leo@email.com",
+    "password": "123"
+}
+
+###
+
+GET {{baseUrl}}/users
+
+
+###
+
+DELETE {{baseUrl}}/users/205ee961-7cd1-4455-a69a-f2cfdda4a2b7
+
+###
+
+PATCH {{baseUrl}}/users/d7d96424-e26b-4fe6-95b7-a57802c06f51
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "johnfdagwgwsg@mail.com",
+    "cpf": "11111111111"
+}
